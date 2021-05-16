@@ -1,0 +1,55 @@
+@import "./vars.css";
+@import "./resets.css";
+@import "./fonts.css";
+
+body {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: var(--gap);
+    padding: var(--gap);
+    max-width: 1380px;
+    min-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: left;
+    height: inherit;
+}
+
+p {
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+p:not(p:last-child) {
+    margin-bottom: 1.5em;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: unset;
+        min-width: unset;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    :root {
+        --gap: 3em;
+    }
+
+    p {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 420px) {
+    :root {
+        --gap: 1em;
+    }
+}

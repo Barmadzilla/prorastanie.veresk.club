@@ -1,0 +1,30 @@
+:root {
+    --radius: 20px;
+    --gap:5em;
+    --bg-gray: #f6f6f6;
+    --green: #80BC70;
+    --light-blue: #72B8F3;
+    --deep-blue: #2E8DDD;
+    --gradient: linear-gradient(to right, var(--light-blue), var(--green));
+    --gradient-reverse: linear-gradient(to left, var(--light-blue), var(--green));
+    --text-gray: #59574E;
+    --bg-green:#F2F8F1;
+    --bg-blue:#F1F8FE;
+    --bg-dark:#A5BDD0;
+}
+
+.text-gradient {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bg-green{
+    background: var(--bg-green);
+}
+@media (max-width: 420px) {
+    .text-gradient {
+        background: unset;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+    }
+}
