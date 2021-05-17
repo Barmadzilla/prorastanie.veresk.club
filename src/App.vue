@@ -5,7 +5,6 @@
     <Logos/>
     <Content/>
     <Map/>
-    <Metrika/>
   </div>
 </template>
 
@@ -15,12 +14,10 @@ import Map from "@/components/Map";
 import Slide from "@/components/Slide";
 import Content from "@/components/Content";
 import Logos from "@/components/Logos";
-import Metrika from "@/components/Metrika";
 
 export default {
   name: 'App',
   components: {
-    Metrika,
     Logos,
     Content,
     Slide,

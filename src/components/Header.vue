@@ -1,5 +1,5 @@
 <template>
-  <img src="../assets/images/title.svg" alt="Пропостание">
+  <img src="../assets/images/title.png" alt="Пропостание">
 </template>
 
 <script>
