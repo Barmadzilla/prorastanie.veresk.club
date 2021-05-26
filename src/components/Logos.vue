@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div>
-      <h3>Валерий и Юлия Казас</h3>
+      <h3>Валерий Казас и Юлия Казас</h3>
       <h4>Ленд-арт</h4>
     </div>
     <div class="logo">
@@ -46,7 +46,14 @@ h4 {
 .logo a {
   margin-left: 3em;
 }
-
+@media (max-width: 1164px) {
+  h3{
+    font-size: 2em;
+  }
+  .logo a img {
+    max-width: 17vw;
+  }
+}
 @media (max-width: 800px) {
   .content {
     flex-direction: column;
@@ -71,7 +78,7 @@ h4 {
 }
 @media (max-width: 420px){
   h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   h4 {
@@ -80,9 +87,13 @@ h4 {
   .logo a img {
     max-width: 25vw;
   }
+  .logo a:first-child img {
+    max-width: unset;
+    max-height: 3.6em;
+  }
   .logo {
     margin-top: unset;
-    align-items: center;
+    align-items: flex-end;
   }
 }
 </style>
